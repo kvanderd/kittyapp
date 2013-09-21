@@ -2,20 +2,39 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body{
+  background-image: url("/assets/white_wall.png");
+}
+
+.logo {
+	width: 2.5em;
+	height: 2.4em;
+	background-image: url("/assets/logo_meow.gif");
+	background-repeat: no-repeat;
+	display: inline-block;
+	position: relative;
+}
+
+.user_nav {
+  display: inline-block;
+  position: relative;
+  float:right;
+}
+
+.forever_nav {
+  display: inline-block;
+}
+
 nav {
-  background: WhiteSmoke;
-	border:1px solid #ccc;
-	border-width:1px 0;
 	list-style:none;
 	margin:0;
-	padding:0;
-	text-align:center;
+	padding-left:1em;
 }
 
 nav a {
 	display:inline-block;
 	padding:10px;
-	color: black;
+	color: gray;
 	text-decoration: none;
 	font-family: "Droid Sans";
 }
@@ -27,9 +46,10 @@ nav a {
 
 .kitty_object {
   margin-top: 1em;
-	border: 2px solid black;
+	border: 2px solid White;
 	display: block;
 	position: relative;
+	background-color: WhiteSmoke;
 }
 
 .kitty_info {
@@ -37,12 +57,14 @@ nav a {
 	position: relative;
 	width: 53em;
 	color: gray;
+	text-align: center;
+	font-family: "Droid Sans";
 }
 
 .thumb_image {
 	display: inline-block;
 	position: relative;
-	border: 0.2em solid gray;
+	border: 0.2em solid white;
 	margin: .5em .5em .5em .5em;
 }
 

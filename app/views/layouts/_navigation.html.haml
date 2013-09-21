@@ -1,9 +1,12 @@
 %nav
-  =link_to 'home', root_path
-  =link_to 'New Kitty', new_kitty_path
-  - if current_user
-    =link_to 'logout', session_path(current_user), method: :delete
-    =link_to current_user.username, user_path(current_user.id)
-  - else 
-    =link_to 'Login', new_session_path
-    =link_to 'Create', new_user_path
+	.logo
+	.forever_nav
+		=link_to "home", root_path
+		=link_to 'New Kitty', new_kitty_path
+	.user_nav
+	- if current_user
+		=link_to 'logout', session_path(current_user), method: :delete
+		=link_to current_user.username, user_path(current_user.id)
+	- else 
+		=link_to 'Login', new_session_path
+		=link_to 'Create', new_user_path

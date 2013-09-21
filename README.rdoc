@@ -6,21 +6,23 @@
 Todo:
 
 Creating redit for cat photos
+Bugs :
+
+	an error message is shown when a user creates an account successfully 
 
 Needs To Be Done:
 
-Bugs :
+	A user can:
+	-ability to comment on a kitty share (maybe do two deep nested comments)
 
-an error message is shown when a user creates an account successfully 
-
-A user can:
--ability to vote up or down a kitty
--ability to comment on a kitty share (maybe do two deep nested comments)
--create a profile for you cat
 
 IP:
+	-ability to vote up or down a kitty
 
 Complete:
--upload a photo
--share a link
--write a description about link
+	-upload a photo
+	-share a link
+	-write a description about link
+
+Feature:
+  Algorithm for feed
