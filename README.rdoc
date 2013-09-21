@@ -9,6 +9,10 @@ Creating redit for cat photos
 
 Needs To Be Done:
 
+Bugs :
+
+an error message is shown when a user creates an account successfully 
+
 A user can:
 -ability to vote up or down a kitty
 -ability to comment on a kitty share (maybe do two deep nested comments)

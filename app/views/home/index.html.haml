@@ -1,6 +1,9 @@
 -@kitty.each do |kitty|
-	%p Link --
-	=kitty.link
-	%p Description --
-	=kitty.description
-	=image_tag kitty.image_url(:thumb).to_s
+	.kitty_object
+		.up_vote
+		.down_vote
+		.kitty_info
+			=kitty.link
+			=kitty.description
+		.thumb_image
+			=image_tag kitty.image_url(:thumb).to_s

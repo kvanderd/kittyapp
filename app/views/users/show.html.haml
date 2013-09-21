@@ -1,10 +1,11 @@
 =@user.username
-%h4 Your Kitties
--@user.kitties.each do |kitty|
-	%p Link --
-	=kitty.link
-	%p Description --
-	=kitty.description
-	=image_tag kitty.image_url(:thumb).to_s
-	=link_to "remove", kitty, :confirm => 'Are you sure?', :method => :delete
+	.kitty_object
+		-@user.kitties.each do |kitty|
+		.kitty_info
+			=kitty.link
+			=kitty.description
+			.thumb_image
+				=image_tag kitty.image_url(:thumb).to_s
+				=link_to "remove", kitty, :confirm => 'Are you sure?', :method => :delete
+
 

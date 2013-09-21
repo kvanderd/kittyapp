@@ -11,10 +11,8 @@
 #
 
 class Kitty < ActiveRecord::Base
-  
-	validates :link, presence: true
 	belongs_to :uses
 	has_many :comments, :as => :commentable
-	attr_accessible :link, :description, :user_id, :image
+	attr_accessible :link, :description, :user_id, :image, :remote_image_url
   mount_uploader :image, ImageUploader
 end
