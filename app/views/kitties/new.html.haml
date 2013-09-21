@@ -1,7 +1,7 @@
 .new_kitty
 	=form_for @kitty, :html => {:multipart => true} do |t|
 		=t.label :link
-		=t.text_area :link, placeholder: "your kitty", cols: "60", rows: "1"
+		=t.text_area :remote_image_url, placeholder: "Image Url, jpeg, png, gif", cols: "60", rows: "1"
 		=t.label :description
 		=t.text_area :description, cols: "60", rows: "6"
 		=t.file_field :image

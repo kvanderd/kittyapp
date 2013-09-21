@@ -5,6 +5,6 @@
 	=kitty.link
 	%p Description --
 	=kitty.description
-	=image_tag kitty.image_url.to_s
+	=image_tag kitty.image_url(:thumb).to_s
 	=link_to "remove", kitty, :confirm => 'Are you sure?', :method => :delete
 
