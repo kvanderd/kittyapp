@@ -2,9 +2,11 @@
 	.kitty_object
 		.up_vote
 		.down_vote
+			=link_to "downvote #{kitty.down_votes.count}", votes_path({kitty_id: kitty.id, up: false}), method: :post, remote: :true
+			=link_to "upvote #{kitty.up_votes.count}", votes_path({kitty_id: kitty, up: true}), method: :post, remote: :true
 		.kitty_info
 			=kitty.link
 			=kitty.description
-			=kitty.created_at
+			="created: #{kitty.time_ago.to_s} minutes ago"
 		.thumb_image
 			=image_tag kitty.image_url(:thumb).to_s

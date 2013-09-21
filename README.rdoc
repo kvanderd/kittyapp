@@ -17,7 +17,13 @@ Needs To Be Done:
 
 
 IP:
-	-ability to vote up or down a kitty
+	-ability to vote up or down a kitty 
+	  -left off 
+	    - the ajax request is working: 
+	    - the json objects coming back from the server are not updating the amount unitl a browser refresh
+	    - add error message that says you already voted. Currently there is a  403 when a user tries to vote twice
+	    - show total votes (not total up and total down)
+
 
 Complete:
 	-upload a photo
