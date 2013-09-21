@@ -10,12 +10,13 @@ Creating redit for cat photos
 Needs To Be Done:
 
 A user can:
--upload a photo
 -ability to vote up or down a kitty
 -ability to comment on a kitty share (maybe do two deep nested comments)
 -create a profile for you cat
 
-Complete:
+IP:
 
+Complete:
+-upload a photo
 -share a link
 -write a description about link
