@@ -1,0 +1,6 @@
+-@kitty.each do |kitty|
+	%p Link --
+	=kitty.link
+	%p Description --
+	=kitty.description
+	=image_tag kitty.image_url.to_s

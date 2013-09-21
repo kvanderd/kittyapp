@@ -1,0 +1,21 @@
+==You left with cappybara tests not working:
+==== there is a rails cast here: http://railscasts.com/episodes/257-request-specs-and-capybara
+=The site is black and white with the exception of the kitty photos
+==use this for testing you test coverage: https://github.com/colszowka/simplecov
+=look up how to do one line of a polymorphic association (comment table)
+Todo:
+
+Creating redit for cat photos
+
+Needs To Be Done:
+
+A user can:
+-upload a photo
+-ability to vote up or down a kitty
+-ability to comment on a kitty share (maybe do two deep nested comments)
+-create a profile for you cat
+
+Complete:
+
+-share a link
+-write a description about link
