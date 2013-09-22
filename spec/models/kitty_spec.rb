@@ -6,6 +6,7 @@
 #  link        :string(255)
 #  description :text
 #  user_id     :integer
+#  image       :string(255)
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #
