@@ -5,9 +5,9 @@ class UsersController < ApplicationController
   end
 
   def create
-    if [:notice]
-      flash[:notice] = "An error occured, please try again."
-    end
+    # if [:notice]
+    #   flash[:notice] = "An error occured, please try again."
+    # end
     @user = User.create(params[:user])
     login(@user)
     redirect_to :root

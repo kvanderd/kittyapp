@@ -17,7 +17,9 @@ class KittiesController < ApplicationController
 	end
 
 	def destroy
-		ap params
+		kitty = Kitty.find(params[:id])
+		kitty.destroy
+		redirect_to :root
 	end
 
 end
