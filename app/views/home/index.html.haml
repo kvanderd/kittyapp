@@ -1,9 +1,9 @@
 -@kitty.each do |kitty|
 	.kitty_object
-		.up_vote
 		.down_vote
 			=link_to "downvote #{kitty.down_votes.count}", votes_path({kitty_id: kitty.id, up: false}), method: :post, remote: :true
-			=link_to "upvote #{kitty.up_votes.count}", votes_path({kitty_id: kitty, up: true}), method: :post, remote: :true
+		.up_vote
+			=link_to "upvote #{kitty.up_votes.count}", votes_path({kitty_id: kitty.id, up: true}), method: :post, remote: :true
 		.kitty_info
 			=kitty.link
 			=kitty.description
