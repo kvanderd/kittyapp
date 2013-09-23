@@ -3,7 +3,11 @@ Kittyapp::Application.routes.draw do
   resources :sessions, only: [:new, :create, :destroy]
   resources :users
   resources :home, only: [:index]
-  resources :kitties
+  
+  resources :kitties do 
+    resources :comments
+  end
+  
   resources :votes, only: [:new, :create]
 
   # The priority is based upon order of creation:

@@ -13,7 +13,7 @@
 
 class Kitty < ActiveRecord::Base
 	belongs_to :user
-	has_many :comments, :as => :commentable
+	has_many :comments, as: :commentable
 	has_many :votes
 	attr_accessible :link, :description, :user_id, :image, :remote_image_url
   mount_uploader :image, ImageUploader

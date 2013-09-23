@@ -13,6 +13,9 @@
 #
 
 class Comment < ActiveRecord::Base
-	belongs_to :kitty
+	belongs_to :commentable, polymorphic: true
+	belongs_to :user
 	has_ancestry
+	attr_accessible :description
+	validates :description, presence: true
 end

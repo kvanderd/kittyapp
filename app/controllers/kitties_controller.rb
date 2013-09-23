@@ -6,6 +6,8 @@ class KittiesController < ApplicationController
 
 	def show
     @kitty = Kitty.find(params[:id])
+    @commentable = @kitty
+    @comments = @commentable.comments
     @comment = Comment.new()
 	end
 

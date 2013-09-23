@@ -1,0 +1,6 @@
+-@comments.each do |comment|
+	%h3
+		=comment.description
+	%p
+		="by: #{comment.user.username},"
+		="#{comment.created_at} ago"

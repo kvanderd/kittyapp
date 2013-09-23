@@ -18,12 +18,12 @@ ActiveRecord::Schema.define(:version => 20130921111026) do
     t.integer  "commentable_id"
     t.string   "commentable_type"
     t.string   "ancestry"
-    t.integer  "kitty_id"
+    t.integer  "user_id"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
   end
 
-  add_index "comments", ["ancestry"], :name => "index_comments_on_ancestry"
+  add_index "comments", ["commentable_id", "commentable_type"], :name => "index_comments_on_commentable_id_and_commentable_type"
 
   create_table "kitties", :force => true do |t|
     t.string   "link"
