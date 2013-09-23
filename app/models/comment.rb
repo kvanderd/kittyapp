@@ -16,6 +16,6 @@ class Comment < ActiveRecord::Base
 	belongs_to :commentable, polymorphic: true
 	belongs_to :user
 	has_ancestry
-	attr_accessible :description
+	attr_accessible :description, :parent_id, :commentable_id, :commentable_type
 	validates :description, presence: true
 end

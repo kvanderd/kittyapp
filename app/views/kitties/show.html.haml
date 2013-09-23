@@ -1,11 +1,11 @@
 .kitty_profile
-	=@kitty.link
-	%p
-		=@kitty.description
+	=@kitty.description
 	%p
 		="Posted by: #{@kitty.user.username}"
 	=image_tag @kitty.image_url(:medium).to_s
 
 .comments
-=render "comments/comments"
 =render "comments/form"
+=render "comments/comment"
+
+

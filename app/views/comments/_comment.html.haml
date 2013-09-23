@@ -1,0 +1,12 @@
+/ .media-body
+/ 	%h4.media-heading=comment.user.username
+/ 	%i= comment.created_at.strftime('%b %d, %Y at %H:%M') 
+/ 	%p=comment.description
+/ 	%p= link_to "Reply", new_polymorphic_path([@commentable, Comment.new], :parent_id => comment)
+/ 	= nested_comments comment.children
+-@comments.each do |comment|
+	%p=comment.user.username
+	%p=comment.created_at.strftime('%b %d, %Y at %H:%M')
+	%p=comment.description
+	%p=link_to "Reply", new_polymorphic_path([@commentable, Comment.new], :parent_id => comment)
+	%p=nested_comments comment.children 
