@@ -1,4 +1,13 @@
-=@kitty.link
-%p
-  =@kitty.description
-=image_tag @kitty.image_url(:medium).to_s
+.kitty_profile
+	=@kitty.link
+	%p
+		=@kitty.description
+	%p
+		="Posted by: #{@kitty.user.username}"
+	=image_tag @kitty.image_url(:medium).to_s
+
+.comments
+	%p this is where all the comments will go
+	=form_for :comment do |t|
+		=t.text_field :description
+		=t.submit

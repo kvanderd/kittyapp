@@ -9,7 +9,7 @@ body{
 .logo {
 	width: 2.5em;
 	height: 2.4em;
-	background-image: url("/assets/logo_meow.gif");
+	background-image: url("/assets/kitty_applogo.gif");
 	background-repeat: no-repeat;
 	display: inline-block;
 	position: relative;
@@ -46,7 +46,7 @@ nav a {
 
 .kitty_object {
   margin-top: 1em;
-	border: 2px solid White;
+	border: 2px solid #009A12;
 	display: block;
 	position: relative;
 	background-color: WhiteSmoke;
@@ -59,20 +59,23 @@ nav a {
 	color: gray;
 	text-align: center;
 	font-family: "Droid Sans";
+	  a {
+	    color: green;
+	  }
 }
 
 .thumb_image {
 	display: inline-block;
 	position: relative;
 	border: 0.2em solid white;
-	margin: .5em .5em .5em .5em;
+	margin: .5em .5em -.3em .5em;
 }
 
 .up_vote {
 	display: inline-block;
 	position: relative;
 	width: 3em;
-	height: 3em;
+	height: 2em;
 	background-image: url("/assets/up_arrow.gif");
 	background-repeat: no-repeat;
 	margin-left: 1em;
@@ -84,7 +87,7 @@ nav a {
 	position: relative;
 	background-repeat: no-repeat;
 	width: 3em;
-	height: 3em;
+	height: 2em;
 }
 
 .aggregate_vote {
