@@ -3,16 +3,16 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body{
-  background-image: url("/assets/white_wall.png");
+  background-color: black;
 }
 
 .logo {
 	width: 2.5em;
 	height: 2.4em;
-	background-image: url("/assets/logo_meow.gif");
 	background-repeat: no-repeat;
 	display: inline-block;
 	position: relative;
+	padding-right:29px;
 }
 
 .user_nav {
@@ -37,6 +37,9 @@ nav a {
 	color: gray;
 	text-decoration: none;
 	font-family: "Droid Sans";
+	a:visited{
+	  color: gray;
+	}
 }
 
 .main{
@@ -47,10 +50,23 @@ nav a {
 .kitty_object {
   margin-top: 1em;
 	border: 2px solid White;
+	border-radius: .5em;
 	display: block;
 	position: relative;
-	background-color: WhiteSmoke;
+	background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0, #CCC),
+      color-stop(1, #F5F5F5)
+  );
+  background-image: -moz-linear-gradient(
+      center bottom,
+      #CCC 0%,
+      #F5F5F5 100%
+  );
 }
+
 
 .kitty_info {
 	display: inline-block;
@@ -59,6 +75,9 @@ nav a {
 	color: gray;
 	text-align: center;
 	font-family: "Droid Sans";
+	a:visited  {
+	  color:green;
+  } 
 }
 
 .thumb_image {
@@ -73,16 +92,12 @@ nav a {
 	position: relative;
 	width: 3em;
 	height: 3em;
-	background-image: url("/assets/up_arrow.gif");
-	background-repeat: no-repeat;
 	margin-left: 1em;
 }
 
 .down_vote {
-	background-image: url("/assets/down_arrow.gif");
 	display: inline-block;
 	position: relative;
-	background-repeat: no-repeat;
 	width: 3em;
 	height: 3em;
 }
@@ -91,5 +106,4 @@ nav a {
 	display: inline-block;
 	position: relative;
 }
-
 

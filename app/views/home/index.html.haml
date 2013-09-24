@@ -1,14 +1,15 @@
 -@kitty.each do |kitty|
 	.kitty_object
 		.down_vote
-			=link_to "up_arrow.gif", votes_path({kitty_id: kitty.id, up: false}), method: :post, remote: :true
+			=link_to image_tag("down_arrow.gif"), votes_path({kitty_id: kitty.id, up: false}), method: :post, remote: :true
 		.aggregate_vote
 			="#{kitty.aggregate}"
 		.up_vote
-			=link_to "upvote", votes_path({kitty_id: kitty.id, up: true}), method: :post, remote: :true
+			=link_to image_tag("up_arrow.gif"), votes_path({kitty_id: kitty.id, up: true}), method: :post, remote: :true
 		.kitty_info
 			=kitty.link
 			=link_to kitty.description, kitty_path(kitty.id)
-			="created: #{kitty.time_ago.to_s} minutes ago"
+			%p="created: #{kitty.time_ago.to_s} minutes ago"
+			%p="#{kitty.comments.count} comments"
 		.thumb_image
 			=image_tag kitty.image_url(:thumb).to_s

@@ -1,9 +1,12 @@
-%h1 kitty Stuff
-=@kitty.link
-=@kitty.description
+.kitty_profile
+	.kitty
+		=@kitty.description
+		="Posted By: #{@kitty.user.username}"
+		="Total Votes: #{@kitty.aggregate}"
+		=@kitty.link
+		=image_tag @kitty.image_url(:medium).to_s
 
-%h2 Comment Stuff
-//=render @comment.parent if @comment.parent
-
-=nested_comments @kitty.comments.arrange(order: :created_at)
-=render '/comments/form'
+	//=render @comment.parent if @comment.parent
+	.kitty_comments
+		=render '/comments/form'
+		=nested_comments @kitty.comments.arrange(order: :created_at)

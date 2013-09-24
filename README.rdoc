@@ -11,21 +11,22 @@ Bugs :
 	an error message is shown when a user creates an account successfully 
 
 Needs To Be Done:
+  style
 
 	A user can:
 
 
 IP:
-	-ability to comment on a kitty share (maybe do two deep nested comments)
 	-ability to vote up or down a kitty 
 	  -left off 
 	    - the ajax request is working: 
 	    - the json objects coming back from the server are not updating the amount unitl a browser refresh
 	    - add error message that says you already voted. Currently there is a  403 when a user tries to vote on more than kitty
-	    - show total votes (not total up and total down)
 
 
 Complete:
+	    - show total votes (not total up and total down)
+	-ability to comment on a kitty share (maybe do two deep nested comments)
 	-upload a photo
 	-share a link
 	-write a description about link
