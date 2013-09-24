@@ -6,6 +6,7 @@
 
 .kitty_profile{
 	width: 75%;
+	color: #548DA9;
 }
 
 .kitty{
@@ -17,4 +18,8 @@
 .kitty_comments{
 	display: inline-box;
 	float: right;
+	color: #2F3440;
+	a {
+	  color: #D89B8E;
+	}
 }

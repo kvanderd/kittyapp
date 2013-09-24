@@ -3,7 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body{
-  background-color: black;
+  background-color: #F3EEDA;
+  font-family: "Droid Sans";
 }
 
 .logo {
@@ -12,13 +13,11 @@ body{
 	background-repeat: no-repeat;
 	display: inline-block;
 	position: relative;
-	padding-right:29px;
 }
 
 .user_nav {
   display: inline-block;
   position: relative;
-  float:right;
 }
 
 .forever_nav {
@@ -34,11 +33,11 @@ nav {
 nav a {
 	display:inline-block;
 	padding:10px;
-	color: gray;
+	color: #548DA9;
 	text-decoration: none;
 	font-family: "Droid Sans";
-	a:visited{
-	  color: gray;
+		a:visited{
+		  color: #548DA9;
 	}
 }
 
@@ -49,7 +48,6 @@ nav a {
 
 .kitty_object {
   margin-top: 1em;
-	border: 2px solid White;
 	border-radius: .5em;
 	display: block;
 	position: relative;
@@ -57,13 +55,13 @@ nav a {
       linear,
       left bottom,
       left top,
-      color-stop(0, #CCC),
-      color-stop(1, #F5F5F5)
+      color-stop(0, #BFD3D1),
+      color-stop(1, #BFD3D1)
   );
   background-image: -moz-linear-gradient(
       center bottom,
-      #CCC 0%,
-      #F5F5F5 100%
+      #F5E5C0 50%,
+      #F5F5F5 50%
   );
 }
 
@@ -72,18 +70,20 @@ nav a {
 	display: inline-block;
 	position: relative;
 	width: 53em;
-	color: gray;
+	color: #548DA9;
 	text-align: center;
 	font-family: "Droid Sans";
-	a:visited  {
-	  color:green;
+	a{
+	  color:#D89B8E;
+		a:visited  {
+		  color:#D89B8E;
+	  }
   } 
 }
 
 .thumb_image {
 	display: inline-block;
 	position: relative;
-	border: 0.2em solid white;
 	margin: .5em .5em .5em .5em;
 }
 

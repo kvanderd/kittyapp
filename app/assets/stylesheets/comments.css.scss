@@ -1,15 +1,14 @@
 .comment {
   margin: 8px 0;
   padding: 8px 15px;
-  border: solid 1px #999;
   width: 300px;
   border-radius: 12px;
   background-image: -webkit-gradient(
       linear,
       left bottom,
       left top,
-      color-stop(0, #CCC),
-      color-stop(1, #F5F5F5)
+      color-stop(0, #BFD3D1),
+      color-stop(1, #BFD3D1)
   );
   background-image: -moz-linear-gradient(
       center bottom,
@@ -19,7 +18,6 @@
 }
 
 .comment .description a {
-  color: #000;
   text-decoration: none;
 }
 
@@ -29,9 +27,14 @@
   float: right;
 }
 
+.comment .user_name {
+  font-size: 12px;
+}
+
 .comment .actions {
   font-size: 12px;
   margin-top: 5px;
+  color: #D89B8E;
 }
 
 .comment .actions a {

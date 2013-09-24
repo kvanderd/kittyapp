@@ -1,12 +1,12 @@
 .kitty_profile
 	.kitty
 		=@kitty.description
-		="Posted By: #{@kitty.user.username}"
-		="Total Votes: #{@kitty.aggregate}"
+		%p="Posted By: #{@kitty.user.username}"
+		%p="Total Votes: #{@kitty.aggregate}"
 		=@kitty.link
 		=image_tag @kitty.image_url(:medium).to_s
 
 	//=render @comment.parent if @comment.parent
-	.kitty_comments
-		=render '/comments/form'
-		=nested_comments @kitty.comments.arrange(order: :created_at)
+.kitty_comments
+	=render '/comments/form'
+	=nested_comments @kitty.comments.arrange(order: :created_at)

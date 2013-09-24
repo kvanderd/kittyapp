@@ -1,7 +1,7 @@
 %nav
 	.logo
 	.forever_nav
-		.logo=link_to image_tag("logo_78.gif"), root_path
+		=link_to "Home", root_path
 		=link_to 'New Kitty', new_kitty_path
 	.user_nav
 	- if current_user
