@@ -14,5 +14,7 @@
 
 class Comment < ActiveRecord::Base
 	belongs_to :kitty
+	belongs_to :user
 	has_ancestry
+	attr_accessible :parent_id, :description
 end
