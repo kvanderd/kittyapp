@@ -5,7 +5,9 @@ Kittyapp::Application.routes.draw do
   resources :home, only: [:index]
 
   resources :kitties do
-
+    resources :comments
+  end
+ 
 
   resources :votes, only: [:new, :create]
 

@@ -4,6 +4,7 @@ class CreateComments < ActiveRecord::Migration
     	t.text       :description
     	t.string      :ancestry
     	t.belongs_to :kitty
+    	t.belongs_to  :user
     	t.timestamps
     end
     add_index :comments, :ancestry

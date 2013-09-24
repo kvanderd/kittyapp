@@ -13,10 +13,10 @@ Bugs :
 Needs To Be Done:
 
 	A user can:
-	-ability to comment on a kitty share (maybe do two deep nested comments)
 
 
 IP:
+	-ability to comment on a kitty share (maybe do two deep nested comments)
 	-ability to vote up or down a kitty 
 	  -left off 
 	    - the ajax request is working: 

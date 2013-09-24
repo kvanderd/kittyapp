@@ -10,6 +10,5 @@
 			=kitty.link
 			=link_to kitty.description, kitty_path(kitty.id)
 			="created: #{kitty.time_ago.to_s} minutes ago"
-			=link_to "comment", new_comment_path
 		.thumb_image
 			=image_tag kitty.image_url(:thumb).to_s

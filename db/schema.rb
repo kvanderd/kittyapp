@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(:version => 20130921111026) do
     t.text     "description"
     t.string   "ancestry"
     t.integer  "kitty_id"
+    t.integer  "user_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end

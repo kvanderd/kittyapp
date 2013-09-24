@@ -6,10 +6,13 @@ class KittiesController < ApplicationController
 
 	def show
     @kitty = Kitty.find(params[:id])
+     #this is setting up the new comment form
+    @comment = Comment.new(parent_id: params[:parent_id])
+     #this is showing all the comments and their children
+    @kitty.comments = Comment.scoped
 	end
 
 	def create
-		ap session[:user_id]
 		@kitty = Kitty.create!(params[:kitty])
 		@kitty.user_id = session[:user_id]
 		@kitty.save!

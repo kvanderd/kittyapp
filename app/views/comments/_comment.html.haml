@@ -1,6 +1,7 @@
 .comment
+	.user_name=comment.user
 	.created_at=comment.created_at.strftime("%B %d, %Y")
 	.description=comment.description
 	.actions
-		=link_to "Reply", new_comment_path(:parent_id => comment)
-		=link_to "Destroy", comment, :confirm => "Are you sure?", :method => :delete
+		=link_to "Reply", new_kitty_comment_path(:parent_id => comment.id, kitty_id: @kitty.id)
+		
