@@ -3,7 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body{
-  background-color: #F3EEDA;
+  background-image: url(cute_cat_background.gif);
+  background-repeat: no-repeat;
+  background-position:center;
   font-family: "Droid Sans";
 }
 
@@ -48,9 +50,7 @@ nav {
 	list-style:none;
 	margin:0;
 	padding-left:1em;
-}
-
-nav a {
+  a {
 	display:inline-block;
 	padding:10px;
 	color: #548DA9;
@@ -58,6 +58,7 @@ nav a {
 	font-family: "Droid Sans";
 		a:visited{
 		  color: #548DA9;
+		}
 	}
 }
 
@@ -67,35 +68,28 @@ nav a {
 }
 .whole_kitty{
 	width: 100%;
+	.kitty_object {
+	  margin: 1em 0em 0em 15em;
+		border-radius: .5em;
+		display: inline-block;
+		position: relative;
+		width: 60%;
+		background-image: -webkit-gradient(
+	      linear,
+	      left bottom,
+	      left top,
+	      color-stop(0, #BFD3D1),
+	      color-stop(1, #BFD3D1)
+	  );
+	  background-image: -moz-linear-gradient(
+	      center bottom,
+	      #F5E5C0 50%,
+	      #F5F5F5 50%
+	  );
+	}
 }
 
-.kitty_object {
-  margin: 1em 0em 0em 15em;
-	border-radius: .5em;
-	display: inline-block;
-	position: relative;
-	width: 60%;
-	background-image: -webkit-gradient(
-      linear,
-      left bottom,
-      left top,
-      color-stop(0, #BFD3D1),
-      color-stop(1, #BFD3D1)
-  );
-  background-image: -moz-linear-gradient(
-      center bottom,
-      #F5E5C0 50%,
-      #F5F5F5 50%
-  );
-}
 
-.description {
-	display: inline-block;
-	position: relative;
-	background-color:#F3EEDA;
-	border-radius: .2em;
-	padding: .5em .5em .5em .5em;
-}
 
 .kitty_info {
   padding: 1em 0em 0em 1em;
@@ -110,6 +104,14 @@ nav a {
 		  color:#D89B8E;
 	  }
   } 
+}
+
+.description {
+	display: inline-block;
+	position: relative;
+	background-color:#F3EEDA;
+	border-radius: .2em;
+	padding: .5em .5em .5em .5em;
 }
 
 .kitty_details {
@@ -127,20 +129,7 @@ nav a {
 	display: inline-block;
 	position: relative;
 	float: right;
-	margin: 3em 1em 0em 0em;
-}
-.up_vote {
-	display: inline-block;
-	position: relative;
+	margin: 2em 1em 0em 0em;
 }
 
-.down_vote {
-	display: inline-block;
-	position: relative;
-}
-
-.aggregate_vote {
-	display: inline-block;
-	position: relative;
-}
 
