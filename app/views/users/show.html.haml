@@ -1,12 +1,15 @@
--if @user.kitties
-	=@user.username
+%h2="Welcome #{@user.username}"
+-@user.kitties.each do |kitty|
+	.whole_kitty
 		.kitty_object
-			-@user.kitties.each do |kitty|
+			.thumb_image
+				=image_tag kitty.image_url(:thumb).to_s
 			.kitty_info
 				=kitty.link
-				=kitty.description
-				.thumb_image
-					=image_tag kitty.image_url(:thumb).to_s
-					=link_to "remove", kitty, :confirm => 'Are you sure?', :method => :delete
--else
-%p You have not uploaded any kitties yet
+				=link_to kitty.description, kitty_path(kitty.id)
+				%p="By: #{kitty.user.username}"
+				%p="created: #{kitty.time_ago.to_s} minutes ago"
+				%p="#{kitty.comments.count} comments"
+			.aggregate_vote
+				="Aggregate Votes:#{kitty.aggregate}"
+			

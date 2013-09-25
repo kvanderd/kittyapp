@@ -4,7 +4,7 @@
 		%p="Posted By: #{@kitty.user.username}"
 		%p="Total Votes: #{@kitty.aggregate}"
 		=@kitty.link
-		=image_tag @kitty.image_url(:medium).to_s
+		.kitty_image=image_tag @kitty.image_url(:medium).to_s
 
 	//=render @comment.parent if @comment.parent
 .kitty_comments
